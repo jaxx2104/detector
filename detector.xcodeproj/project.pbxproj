@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3FF005CAA0C9AA2151A6FCA /* Pods_detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570FE58566EE99ECB614C8C1 /* Pods_detector.framework */; };
+		CA1A77331CF749050007485E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1A772F1CF749050007485E /* LaunchScreen.storyboard */; };
+		CA1A77341CF749050007485E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1A77311CF749050007485E /* Main.storyboard */; };
+		CA36F4191CF746F20000563E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA36F4181CF746F20000563E /* Assets.xcassets */; };
+		CA36F41D1CF747030000563E /* 1月 30, 2016 21:53.gif in Resources */ = {isa = PBXBuildFile; fileRef = CA36F41A1CF747030000563E /* 1月 30, 2016 21:53.gif */; };
+		CA36F41E1CF747030000563E /* 1月 31, 2016 21:56.gif in Resources */ = {isa = PBXBuildFile; fileRef = CA36F41B1CF747030000563E /* 1月 31, 2016 21:56.gif */; };
+		CA36F41F1CF747030000563E /* 2月 06, 2016 01:34.gif in Resources */ = {isa = PBXBuildFile; fileRef = CA36F41C1CF747030000563E /* 2月 06, 2016 01:34.gif */; };
+		CA36F4571CF7473D0000563E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4201CF7473D0000563E /* AppDelegate.swift */; };
+		CA36F4581CF7473D0000563E /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4211CF7473D0000563E /* CameraUtil.swift */; };
+		CA36F4591CF7473D0000563E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4221CF7473D0000563E /* CustomCell.swift */; };
+		CA36F45A1CF7473D0000563E /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4241CF7473D0000563E /* Circle.swift */; };
+		CA36F45B1CF7473D0000563E /* DelaunayLinesForEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4261CF7473D0000563E /* DelaunayLinesForEdges.swift */; };
+		CA36F45C1CF7473D0000563E /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4271CF7473D0000563E /* Edge.swift */; };
+		CA36F45D1CF7473D0000563E /* EdgeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4281CF7473D0000563E /* EdgeList.swift */; };
+		CA36F45E1CF7473D0000563E /* EdgeReorderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4291CF7473D0000563E /* EdgeReorderer.swift */; };
+		CA36F45F1CF7473D0000563E /* Halfedge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F42A1CF7473D0000563E /* Halfedge.swift */; };
+		CA36F4601CF7473D0000563E /* HalfedgePriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F42B1CF7473D0000563E /* HalfedgePriorityQueue.swift */; };
+		CA36F4611CF7473D0000563E /* ICoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F42C1CF7473D0000563E /* ICoord.swift */; };
+		CA36F4621CF7473D0000563E /* IDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F42D1CF7473D0000563E /* IDisposable.swift */; };
+		CA36F4631CF7473D0000563E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA36F42E1CF7473D0000563E /* Info.plist */; };
+		CA36F4641CF7473D0000563E /* Kruskal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F42F1CF7473D0000563E /* Kruskal.swift */; };
+		CA36F4651CF7473D0000563E /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4301CF7473D0000563E /* LineSegment.swift */; };
+		CA36F4661CF7473D0000563E /* LR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4311CF7473D0000563E /* LR.swift */; };
+		CA36F4671CF7473D0000563E /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4321CF7473D0000563E /* Point.swift */; };
+		CA36F4681CF7473D0000563E /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4331CF7473D0000563E /* Polygon.swift */; };
+		CA36F4691CF7473D0000563E /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4341CF7473D0000563E /* Rectangle.swift */; };
+		CA36F46A1CF7473D0000563E /* selectEdgesForSitePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4351CF7473D0000563E /* selectEdgesForSitePoint.swift */; };
+		CA36F46B1CF7473D0000563E /* selectNonIntersectingEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4361CF7473D0000563E /* selectNonIntersectingEdges.swift */; };
+		CA36F46C1CF7473D0000563E /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4371CF7473D0000563E /* Site.swift */; };
+		CA36F46D1CF7473D0000563E /* SiteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4381CF7473D0000563E /* SiteList.swift */; };
+		CA36F46E1CF7473D0000563E /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4391CF7473D0000563E /* Triangle.swift */; };
+		CA36F46F1CF7473D0000563E /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F43A1CF7473D0000563E /* Vertex.swift */; };
+		CA36F4701CF7473D0000563E /* VisibleLineSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F43B1CF7473D0000563E /* VisibleLineSegments.swift */; };
+		CA36F4711CF7473D0000563E /* Voronoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F43C1CF7473D0000563E /* Voronoi.swift */; };
+		CA36F4721CF7473D0000563E /* Winding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F43D1CF7473D0000563E /* Winding.swift */; };
+		CA36F4731CF7473D0000563E /* Detector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA36F43E1CF7473D0000563E /* Detector.mm */; };
+		CA36F4741CF7473D0000563E /* DelaunayEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4411CF7473D0000563E /* DelaunayEdge.m */; };
+		CA36F4751CF7473D0000563E /* DelaunayPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4431CF7473D0000563E /* DelaunayPoint.m */; };
+		CA36F4761CF7473D0000563E /* DelaunayTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4451CF7473D0000563E /* DelaunayTriangle.m */; };
+		CA36F4771CF7473D0000563E /* DelaunayTriangulation.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4471CF7473D0000563E /* DelaunayTriangulation.m */; };
+		CA36F4781CF7473D0000563E /* VoronoiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36F44A1CF7473D0000563E /* VoronoiCell.m */; };
+		CA36F4791CF7473D0000563E /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F44B1CF7473D0000563E /* extension.swift */; };
+		CA36F47A1CF7473D0000563E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F44C1CF7473D0000563E /* GameScene.swift */; };
+		CA36F47C1CF7473D0000563E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F44E1CF7473D0000563E /* Item.swift */; };
+		CA36F47D1CF7473D0000563E /* SuzukiScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F44F1CF7473D0000563E /* SuzukiScene.swift */; };
+		CA36F47E1CF7473D0000563E /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4501CF7473D0000563E /* TableController.swift */; };
+		CA36F47F1CF7473D0000563E /* TaruiScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4511CF7473D0000563E /* TaruiScene.swift */; };
+		CA36F4801CF7473D0000563E /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4541CF7473D0000563E /* UIImage+ColorAtPixel.m */; };
+		CA36F4811CF7473D0000563E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36F4561CF7473D0000563E /* ViewController.swift */; };
+		CA6483E81BE2749400A3F13B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D0B2D1B668FE900D79DEF /* opencv2.framework */; };
+		CA9330341B64BFEE00BDABA7 /* uniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9330331B64BFEE00BDABA7 /* uniUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA9330301B64BFEE00BDABA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA9330131B64BFED00BDABA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA93301A1B64BFED00BDABA7;
+			remoteInfo = uni;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0599AAC01AE02CCCEE83A570 /* Pods-detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-detector/Pods-detector.debug.xcconfig"; sourceTree = "<group>"; };
+		434D9C4F7F91301C6FCC12D9 /* Pods-detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-detector.release.xcconfig"; path = "Pods/Target Support Files/Pods-detector/Pods-detector.release.xcconfig"; sourceTree = "<group>"; };
+		570FE58566EE99ECB614C8C1 /* Pods_detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1A77301CF749050007485E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA1A77321CF749050007485E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		CA36F4181CF746F20000563E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = detector/Assets/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		CA36F41A1CF747030000563E /* 1月 30, 2016 21:53.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "1月 30, 2016 21:53.gif"; path = "detector/Assets/1月 30, 2016 21:53.gif"; sourceTree = SOURCE_ROOT; };
+		CA36F41B1CF747030000563E /* 1月 31, 2016 21:56.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "1月 31, 2016 21:56.gif"; path = "detector/Assets/1月 31, 2016 21:56.gif"; sourceTree = SOURCE_ROOT; };
+		CA36F41C1CF747030000563E /* 2月 06, 2016 01:34.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "2月 06, 2016 01:34.gif"; path = "detector/Assets/2月 06, 2016 01:34.gif"; sourceTree = SOURCE_ROOT; };
+		CA36F4201CF7473D0000563E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = detector/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		CA36F4211CF7473D0000563E /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraUtil.swift; path = detector/CameraUtil.swift; sourceTree = SOURCE_ROOT; };
+		CA36F4221CF7473D0000563E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell.swift; path = detector/CustomCell.swift; sourceTree = SOURCE_ROOT; };
+		CA36F4241CF7473D0000563E /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		CA36F4251CF7473D0000563E /* Delaunay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delaunay.h; sourceTree = "<group>"; };
+		CA36F4261CF7473D0000563E /* DelaunayLinesForEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelaunayLinesForEdges.swift; sourceTree = "<group>"; };
+		CA36F4271CF7473D0000563E /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		CA36F4281CF7473D0000563E /* EdgeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeList.swift; sourceTree = "<group>"; };
+		CA36F4291CF7473D0000563E /* EdgeReorderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeReorderer.swift; sourceTree = "<group>"; };
+		CA36F42A1CF7473D0000563E /* Halfedge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Halfedge.swift; sourceTree = "<group>"; };
+		CA36F42B1CF7473D0000563E /* HalfedgePriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfedgePriorityQueue.swift; sourceTree = "<group>"; };
+		CA36F42C1CF7473D0000563E /* ICoord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICoord.swift; sourceTree = "<group>"; };
+		CA36F42D1CF7473D0000563E /* IDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDisposable.swift; sourceTree = "<group>"; };
+		CA36F42E1CF7473D0000563E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA36F42F1CF7473D0000563E /* Kruskal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kruskal.swift; sourceTree = "<group>"; };
+		CA36F4301CF7473D0000563E /* LineSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegment.swift; sourceTree = "<group>"; };
+		CA36F4311CF7473D0000563E /* LR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LR.swift; sourceTree = "<group>"; };
+		CA36F4321CF7473D0000563E /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		CA36F4331CF7473D0000563E /* Polygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		CA36F4341CF7473D0000563E /* Rectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		CA36F4351CF7473D0000563E /* selectEdgesForSitePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectEdgesForSitePoint.swift; sourceTree = "<group>"; };
+		CA36F4361CF7473D0000563E /* selectNonIntersectingEdges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectNonIntersectingEdges.swift; sourceTree = "<group>"; };
+		CA36F4371CF7473D0000563E /* Site.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		CA36F4381CF7473D0000563E /* SiteList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteList.swift; sourceTree = "<group>"; };
+		CA36F4391CF7473D0000563E /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		CA36F43A1CF7473D0000563E /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		CA36F43B1CF7473D0000563E /* VisibleLineSegments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleLineSegments.swift; sourceTree = "<group>"; };
+		CA36F43C1CF7473D0000563E /* Voronoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voronoi.swift; sourceTree = "<group>"; };
+		CA36F43D1CF7473D0000563E /* Winding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Winding.swift; sourceTree = "<group>"; };
+		CA36F43E1CF7473D0000563E /* Detector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Detector.mm; path = detector/Detector.mm; sourceTree = SOURCE_ROOT; };
+		CA36F4401CF7473D0000563E /* DelaunayEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayEdge.h; sourceTree = "<group>"; };
+		CA36F4411CF7473D0000563E /* DelaunayEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayEdge.m; sourceTree = "<group>"; };
+		CA36F4421CF7473D0000563E /* DelaunayPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayPoint.h; sourceTree = "<group>"; };
+		CA36F4431CF7473D0000563E /* DelaunayPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayPoint.m; sourceTree = "<group>"; };
+		CA36F4441CF7473D0000563E /* DelaunayTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayTriangle.h; sourceTree = "<group>"; };
+		CA36F4451CF7473D0000563E /* DelaunayTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayTriangle.m; sourceTree = "<group>"; };
+		CA36F4461CF7473D0000563E /* DelaunayTriangulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayTriangulation.h; sourceTree = "<group>"; };
+		CA36F4471CF7473D0000563E /* DelaunayTriangulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayTriangulation.m; sourceTree = "<group>"; };
+		CA36F4481CF7473D0000563E /* Edgy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Edgy-Prefix.pch"; sourceTree = "<group>"; };
+		CA36F4491CF7473D0000563E /* VoronoiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoronoiCell.h; sourceTree = "<group>"; };
+		CA36F44A1CF7473D0000563E /* VoronoiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoronoiCell.m; sourceTree = "<group>"; };
+		CA36F44B1CF7473D0000563E /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = extension.swift; path = detector/extension.swift; sourceTree = SOURCE_ROOT; };
+		CA36F44C1CF7473D0000563E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = detector/GameScene.swift; sourceTree = SOURCE_ROOT; };
+		CA36F44D1CF7473D0000563E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = detector/Info.plist; sourceTree = SOURCE_ROOT; };
+		CA36F44E1CF7473D0000563E /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = detector/Item.swift; sourceTree = SOURCE_ROOT; };
+		CA36F44F1CF7473D0000563E /* SuzukiScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuzukiScene.swift; path = detector/SuzukiScene.swift; sourceTree = SOURCE_ROOT; };
+		CA36F4501CF7473D0000563E /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableController.swift; path = detector/TableController.swift; sourceTree = SOURCE_ROOT; };
+		CA36F4511CF7473D0000563E /* TaruiScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaruiScene.swift; path = detector/TaruiScene.swift; sourceTree = SOURCE_ROOT; };
+		CA36F4531CF7473D0000563E /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		CA36F4541CF7473D0000563E /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		CA36F4551CF7473D0000563E /* detector-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "detector-Bridging-Header.h"; path = "detector/detector-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		CA36F4561CF7473D0000563E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = detector/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		CA3D0B2D1B668FE900D79DEF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		CA93301B1B64BFED00BDABA7 /* detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = detector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA93302F1B64BFEE00BDABA7 /* detector.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = detector.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9330331B64BFEE00BDABA7 /* uniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uniUITests.swift; sourceTree = "<group>"; };
+		CA9330351B64BFEE00BDABA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE82BAED316289D0A1234D01 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA9330181B64BFED00BDABA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6483E81BE2749400A3F13B /* opencv2.framework in Frameworks */,
+				B3FF005CAA0C9AA2151A6FCA /* Pods_detector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA93302C1B64BFEE00BDABA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D185EF8C05D3F19A10C9DFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0599AAC01AE02CCCEE83A570 /* Pods-detector.debug.xcconfig */,
+				434D9C4F7F91301C6FCC12D9 /* Pods-detector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA36F4231CF7473D0000563E /* Delaunay */ = {
+			isa = PBXGroup;
+			children = (
+				CA36F4241CF7473D0000563E /* Circle.swift */,
+				CA36F4251CF7473D0000563E /* Delaunay.h */,
+				CA36F4261CF7473D0000563E /* DelaunayLinesForEdges.swift */,
+				CA36F4271CF7473D0000563E /* Edge.swift */,
+				CA36F4281CF7473D0000563E /* EdgeList.swift */,
+				CA36F4291CF7473D0000563E /* EdgeReorderer.swift */,
+				CA36F42A1CF7473D0000563E /* Halfedge.swift */,
+				CA36F42B1CF7473D0000563E /* HalfedgePriorityQueue.swift */,
+				CA36F42C1CF7473D0000563E /* ICoord.swift */,
+				CA36F42D1CF7473D0000563E /* IDisposable.swift */,
+				CA36F42E1CF7473D0000563E /* Info.plist */,
+				CA36F42F1CF7473D0000563E /* Kruskal.swift */,
+				CA36F4301CF7473D0000563E /* LineSegment.swift */,
+				CA36F4311CF7473D0000563E /* LR.swift */,
+				CA36F4321CF7473D0000563E /* Point.swift */,
+				CA36F4331CF7473D0000563E /* Polygon.swift */,
+				CA36F4341CF7473D0000563E /* Rectangle.swift */,
+				CA36F4351CF7473D0000563E /* selectEdgesForSitePoint.swift */,
+				CA36F4361CF7473D0000563E /* selectNonIntersectingEdges.swift */,
+				CA36F4371CF7473D0000563E /* Site.swift */,
+				CA36F4381CF7473D0000563E /* SiteList.swift */,
+				CA36F4391CF7473D0000563E /* Triangle.swift */,
+				CA36F43A1CF7473D0000563E /* Vertex.swift */,
+				CA36F43B1CF7473D0000563E /* VisibleLineSegments.swift */,
+				CA36F43C1CF7473D0000563E /* Voronoi.swift */,
+				CA36F43D1CF7473D0000563E /* Winding.swift */,
+			);
+			name = Delaunay;
+			path = detector/Delaunay;
+			sourceTree = SOURCE_ROOT;
+		};
+		CA36F43F1CF7473D0000563E /* Edgy */ = {
+			isa = PBXGroup;
+			children = (
+				CA36F4401CF7473D0000563E /* DelaunayEdge.h */,
+				CA36F4411CF7473D0000563E /* DelaunayEdge.m */,
+				CA36F4421CF7473D0000563E /* DelaunayPoint.h */,
+				CA36F4431CF7473D0000563E /* DelaunayPoint.m */,
+				CA36F4441CF7473D0000563E /* DelaunayTriangle.h */,
+				CA36F4451CF7473D0000563E /* DelaunayTriangle.m */,
+				CA36F4461CF7473D0000563E /* DelaunayTriangulation.h */,
+				CA36F4471CF7473D0000563E /* DelaunayTriangulation.m */,
+				CA36F4481CF7473D0000563E /* Edgy-Prefix.pch */,
+				CA36F4491CF7473D0000563E /* VoronoiCell.h */,
+				CA36F44A1CF7473D0000563E /* VoronoiCell.m */,
+			);
+			name = Edgy;
+			path = detector/Edgy;
+			sourceTree = SOURCE_ROOT;
+		};
+		CA36F4521CF7473D0000563E /* UIImage+ColorAtPixel */ = {
+			isa = PBXGroup;
+			children = (
+				CA36F4531CF7473D0000563E /* UIImage+ColorAtPixel.h */,
+				CA36F4541CF7473D0000563E /* UIImage+ColorAtPixel.m */,
+			);
+			name = "UIImage+ColorAtPixel";
+			path = "detector/UIImage+ColorAtPixel";
+			sourceTree = SOURCE_ROOT;
+		};
+		CA9330121B64BFED00BDABA7 = {
+			isa = PBXGroup;
+			children = (
+				CA93301D1B64BFED00BDABA7 /* detector */,
+				CA9330321B64BFEE00BDABA7 /* uniUITests */,
+				CA93301C1B64BFED00BDABA7 /* Products */,
+				F205D35C3CF63D5D73FE6BD9 /* Frameworks */,
+				2D185EF8C05D3F19A10C9DFB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CA93301C1B64BFED00BDABA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA93301B1B64BFED00BDABA7 /* detector.app */,
+				CA93302F1B64BFEE00BDABA7 /* detector.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA93301D1B64BFED00BDABA7 /* detector */ = {
+			isa = PBXGroup;
+			children = (
+				CACB76531BF78E73007DCDF3 /* Assets */,
+				CA36F4231CF7473D0000563E /* Delaunay */,
+				CA36F43F1CF7473D0000563E /* Edgy */,
+				CA36F4521CF7473D0000563E /* UIImage+ColorAtPixel */,
+				CA36F4201CF7473D0000563E /* AppDelegate.swift */,
+				CA36F4561CF7473D0000563E /* ViewController.swift */,
+				CA36F4501CF7473D0000563E /* TableController.swift */,
+				CA36F44C1CF7473D0000563E /* GameScene.swift */,
+				CA36F4211CF7473D0000563E /* CameraUtil.swift */,
+				CA36F4221CF7473D0000563E /* CustomCell.swift */,
+				CA36F44B1CF7473D0000563E /* extension.swift */,
+				CA36F44D1CF7473D0000563E /* Info.plist */,
+				CA36F44E1CF7473D0000563E /* Item.swift */,
+				CA36F44F1CF7473D0000563E /* SuzukiScene.swift */,
+				CA36F4511CF7473D0000563E /* TaruiScene.swift */,
+				CA36F43E1CF7473D0000563E /* Detector.mm */,
+				CA36F4551CF7473D0000563E /* detector-Bridging-Header.h */,
+				CA1A772F1CF749050007485E /* LaunchScreen.storyboard */,
+				CA1A77311CF749050007485E /* Main.storyboard */,
+			);
+			name = detector;
+			path = uni;
+			sourceTree = "<group>";
+		};
+		CA9330321B64BFEE00BDABA7 /* uniUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA9330331B64BFEE00BDABA7 /* uniUITests.swift */,
+				CA9330351B64BFEE00BDABA7 /* Info.plist */,
+			);
+			path = uniUITests;
+			sourceTree = "<group>";
+		};
+		CACB76531BF78E73007DCDF3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CA36F4181CF746F20000563E /* Assets.xcassets */,
+				CA36F41A1CF747030000563E /* 1月 30, 2016 21:53.gif */,
+				CA36F41B1CF747030000563E /* 1月 31, 2016 21:56.gif */,
+				CA36F41C1CF747030000563E /* 2月 06, 2016 01:34.gif */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F205D35C3CF63D5D73FE6BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA3D0B2D1B668FE900D79DEF /* opencv2.framework */,
+				CE82BAED316289D0A1234D01 /* Pods.framework */,
+				570FE58566EE99ECB614C8C1 /* Pods_detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA93301A1B64BFED00BDABA7 /* detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9330381B64BFEE00BDABA7 /* Build configuration list for PBXNativeTarget "detector" */;
+			buildPhases = (
+				3E3E6ECECB05D6589D3CEA7D /* Check Pods Manifest.lock */,
+				CA9330171B64BFED00BDABA7 /* Sources */,
+				CA9330181B64BFED00BDABA7 /* Frameworks */,
+				CA9330191B64BFED00BDABA7 /* Resources */,
+				30D7A8F0DE319D61AF61D841 /* Embed Pods Frameworks */,
+				EEF75831200AEF7A21277D2E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = detector;
+			productName = uni;
+			productReference = CA93301B1B64BFED00BDABA7 /* detector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA93302E1B64BFEE00BDABA7 /* detectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA93303B1B64BFEE00BDABA7 /* Build configuration list for PBXNativeTarget "detectorUITests" */;
+			buildPhases = (
+				CA93302B1B64BFEE00BDABA7 /* Sources */,
+				CA93302C1B64BFEE00BDABA7 /* Frameworks */,
+				CA93302D1B64BFEE00BDABA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA9330311B64BFEE00BDABA7 /* PBXTargetDependency */,
+			);
+			name = detectorUITests;
+			productName = uniUITests;
+			productReference = CA93302F1B64BFEE00BDABA7 /* detector.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA9330131B64BFED00BDABA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = jaxx;
+				TargetAttributes = {
+					CA93301A1B64BFED00BDABA7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = K2X5ZDV6BX;
+					};
+					CA93302E1B64BFEE00BDABA7 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CA93301A1B64BFED00BDABA7;
+					};
+				};
+			};
+			buildConfigurationList = CA9330161B64BFED00BDABA7 /* Build configuration list for PBXProject "detector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA9330121B64BFED00BDABA7;
+			productRefGroup = CA93301C1B64BFED00BDABA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA93301A1B64BFED00BDABA7 /* detector */,
+				CA93302E1B64BFEE00BDABA7 /* detectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA9330191B64BFED00BDABA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1A77331CF749050007485E /* LaunchScreen.storyboard in Resources */,
+				CA36F41F1CF747030000563E /* 2月 06, 2016 01:34.gif in Resources */,
+				CA36F4191CF746F20000563E /* Assets.xcassets in Resources */,
+				CA36F41E1CF747030000563E /* 1月 31, 2016 21:56.gif in Resources */,
+				CA1A77341CF749050007485E /* Main.storyboard in Resources */,
+				CA36F41D1CF747030000563E /* 1月 30, 2016 21:53.gif in Resources */,
+				CA36F4631CF7473D0000563E /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA93302D1B64BFEE00BDABA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D7A8F0DE319D61AF61D841 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-detector/Pods-detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E3E6ECECB05D6589D3CEA7D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF75831200AEF7A21277D2E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-detector/Pods-detector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA9330171B64BFED00BDABA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA36F47F1CF7473D0000563E /* TaruiScene.swift in Sources */,
+				CA36F4671CF7473D0000563E /* Point.swift in Sources */,
+				CA36F4731CF7473D0000563E /* Detector.mm in Sources */,
+				CA36F45B1CF7473D0000563E /* DelaunayLinesForEdges.swift in Sources */,
+				CA36F4711CF7473D0000563E /* Voronoi.swift in Sources */,
+				CA36F45D1CF7473D0000563E /* EdgeList.swift in Sources */,
+				CA36F47A1CF7473D0000563E /* GameScene.swift in Sources */,
+				CA36F4691CF7473D0000563E /* Rectangle.swift in Sources */,
+				CA36F4811CF7473D0000563E /* ViewController.swift in Sources */,
+				CA36F4771CF7473D0000563E /* DelaunayTriangulation.m in Sources */,
+				CA36F4581CF7473D0000563E /* CameraUtil.swift in Sources */,
+				CA36F46F1CF7473D0000563E /* Vertex.swift in Sources */,
+				CA36F4721CF7473D0000563E /* Winding.swift in Sources */,
+				CA36F46A1CF7473D0000563E /* selectEdgesForSitePoint.swift in Sources */,
+				CA36F46D1CF7473D0000563E /* SiteList.swift in Sources */,
+				CA36F4621CF7473D0000563E /* IDisposable.swift in Sources */,
+				CA36F46C1CF7473D0000563E /* Site.swift in Sources */,
+				CA36F4611CF7473D0000563E /* ICoord.swift in Sources */,
+				CA36F4641CF7473D0000563E /* Kruskal.swift in Sources */,
+				CA36F47D1CF7473D0000563E /* SuzukiScene.swift in Sources */,
+				CA36F4751CF7473D0000563E /* DelaunayPoint.m in Sources */,
+				CA36F45C1CF7473D0000563E /* Edge.swift in Sources */,
+				CA36F47E1CF7473D0000563E /* TableController.swift in Sources */,
+				CA36F4651CF7473D0000563E /* LineSegment.swift in Sources */,
+				CA36F4661CF7473D0000563E /* LR.swift in Sources */,
+				CA36F45A1CF7473D0000563E /* Circle.swift in Sources */,
+				CA36F4601CF7473D0000563E /* HalfedgePriorityQueue.swift in Sources */,
+				CA36F46E1CF7473D0000563E /* Triangle.swift in Sources */,
+				CA36F45E1CF7473D0000563E /* EdgeReorderer.swift in Sources */,
+				CA36F4741CF7473D0000563E /* DelaunayEdge.m in Sources */,
+				CA36F4791CF7473D0000563E /* extension.swift in Sources */,
+				CA36F4761CF7473D0000563E /* DelaunayTriangle.m in Sources */,
+				CA36F47C1CF7473D0000563E /* Item.swift in Sources */,
+				CA36F4681CF7473D0000563E /* Polygon.swift in Sources */,
+				CA36F4591CF7473D0000563E /* CustomCell.swift in Sources */,
+				CA36F45F1CF7473D0000563E /* Halfedge.swift in Sources */,
+				CA36F4801CF7473D0000563E /* UIImage+ColorAtPixel.m in Sources */,
+				CA36F46B1CF7473D0000563E /* selectNonIntersectingEdges.swift in Sources */,
+				CA36F4701CF7473D0000563E /* VisibleLineSegments.swift in Sources */,
+				CA36F4781CF7473D0000563E /* VoronoiCell.m in Sources */,
+				CA36F4571CF7473D0000563E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA93302B1B64BFEE00BDABA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9330341B64BFEE00BDABA7 /* uniUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA9330311B64BFEE00BDABA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA93301A1B64BFED00BDABA7 /* detector */;
+			targetProxy = CA9330301B64BFEE00BDABA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA1A772F1CF749050007485E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1A77301CF749050007485E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../detector/Base.lproj;
+			sourceTree = "<group>";
+		};
+		CA1A77311CF749050007485E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1A77321CF749050007485E /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../detector/Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA9330361B64BFEE00BDABA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA9330371B64BFEE00BDABA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA9330391B64BFEE00BDABA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0599AAC01AE02CCCEE83A570 /* Pods-detector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/detector/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaxx.det;
+				PRODUCT_NAME = detector;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "detector/detector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA93303A1B64BFEE00BDABA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434D9C4F7F91301C6FCC12D9 /* Pods-detector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/detector/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaxx.det;
+				PRODUCT_NAME = detector;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "detector/detector-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CA93303C1B64BFEE00BDABA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = uniUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaxx.uniUITests;
+				PRODUCT_NAME = detector;
+				TEST_TARGET_NAME = uni;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CA93303D1B64BFEE00BDABA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = uniUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaxx.uniUITests;
+				PRODUCT_NAME = detector;
+				TEST_TARGET_NAME = uni;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA9330161B64BFED00BDABA7 /* Build configuration list for PBXProject "detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9330361B64BFEE00BDABA7 /* Debug */,
+				CA9330371B64BFEE00BDABA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA9330381B64BFEE00BDABA7 /* Build configuration list for PBXNativeTarget "detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9330391B64BFEE00BDABA7 /* Debug */,
+				CA93303A1B64BFEE00BDABA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA93303B1B64BFEE00BDABA7 /* Build configuration list for PBXNativeTarget "detectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA93303C1B64BFEE00BDABA7 /* Debug */,
+				CA93303D1B64BFEE00BDABA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA9330131B64BFED00BDABA7 /* Project object */;
+}

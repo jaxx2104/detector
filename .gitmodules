@@ -1,0 +1,3 @@
+[submodule "detector/as3delaunay-Swift"]
+	path = detector/as3delaunay-Swift
+	url = git@github.com:jaxx2104/as3delaunay-Swift.git
